@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Social Hub</title>
+    <title>Dev_Gear Socials</title>
     <style>
         * {
             margin: 0;
@@ -117,13 +117,13 @@
             transform: translateY(0);
         }
 
-        .instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
         .twitter { background: linear-gradient(45deg, #1da1f2, #0d8bd9); }
-        .linkedin { background: linear-gradient(45deg, #0077b5, #005885); }
-        .youtube { background: linear-gradient(45deg, #ff0000, #cc0000); }
-        .tiktok { background: linear-gradient(45deg, #ff0050, #000000); }
+        .youtube { background: linear-gradient(45deg, #000000, ##2e2d2d); }
         .github { background: linear-gradient(45deg, #333333, #000000); }
-        .website { background: linear-gradient(45deg, #ff6b6b, #feca57); }
+        .roblox { background: linear-gradient(45deg, #00a2ff, #0074cc); }
+        .reddit { background: linear-gradient(45deg, #ff4500, #cc3600); }
+        .custom1 { background: linear-gradient(45deg, #9b59b6, #8e44ad); }
+        .custom2 { background: linear-gradient(45deg, #2ecc71, #27ae60); }
         .email { background: linear-gradient(45deg, #667eea, #764ba2); }
 
         .icon {
@@ -145,305 +145,52 @@
             }
         }
 
-        .edit-mode {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            border: none;
-            border-radius: 50px;
-            padding: 10px 20px;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
 
-        .edit-mode:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            backdrop-filter: blur(5px);
-            z-index: 1000;
-        }
-
-        .modal-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: white;
-            padding: 30px;
-            border-radius: 20px;
-            max-width: 500px;
-            width: 90%;
-            max-height: 80vh;
-            overflow-y: auto;
-        }
-
-        .modal h2 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .form-group {
-            margin-bottom: 15px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            font-size: 16px;
-        }
-
-        .form-group input:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-
-        .modal-buttons {
-            display: flex;
-            gap: 10px;
-            justify-content: flex-end;
-            margin-top: 20px;
-        }
-
-        .btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-
-        .btn-save {
-            background: #667eea;
-            color: white;
-        }
-
-        .btn-cancel {
-            background: #ddd;
-            color: #333;
-        }
-
-        .btn:hover {
-            opacity: 0.9;
-            transform: translateY(-1px);
-        }
     </style>
 </head>
 <body>
-    <button class="edit-mode" onclick="openEditModal()">✏️ Edit</button>
-    
     <div class="container">
         <div class="profile">
-            <div class="profile-pic" id="profilePic">YN</div>
-            <h1 class="name" id="displayName">Your Name</h1>
-            <p class="bio" id="displayBio">Your bio goes here. Tell people about yourself!</p>
+            <div class="profile-pic">YN</div>
+            <h1 class="name">Dev_Gear</h1>
+            <p class="bio"> I'm Dev_Gear. Just a guy.</p>
         </div>
         
-        <div class="links" id="linksContainer">
-            <a href="https://instagram.com/yourusername" class="link instagram" target="_blank">
-                <span>📷</span>
-                Instagram
+        <div class="links">
+            <a href="https://x.com/DevGear3" class="link twitter" target="_blank">
+                <span>✖</span>
+                X
             </a>
-            <a href="https://twitter.com/yourusername" class="link twitter" target="_blank">
-                <span>🐦</span>
-                Twitter
-            </a>
-            <a href="https://linkedin.com/in/yourusername" class="link linkedin" target="_blank">
-                <span>💼</span>
-                LinkedIn
-            </a>
-            <a href="https://youtube.com/@yourusername" class="link youtube" target="_blank">
+            <a href="https://www.youtube.com/@Dev_Gear" class="link youtube" target="_blank">
                 <span>📺</span>
                 YouTube
             </a>
-            <a href="https://tiktok.com/@yourusername" class="link tiktok" target="_blank">
-                <span>🎵</span>
-                TikTok
+            <a href="https://www.roblox.com/users/193613682" class="link roblox" target="_blank">
+                <span>🎮</span>
+                Roblox
             </a>
-            <a href="https://github.com/yourusername" class="link github" target="_blank">
+            <a href="https://www.reddit.com/user/Miserable_Umpire1174" class="link reddit" target="_blank">
+                <span>🔴</span>
+                Reddit
+            </a>
+            <a href="https://github.com/DevGeah" class="link github" target="_blank">
                 <span>💻</span>
                 GitHub
             </a>
-            <a href="https://yourwebsite.com" class="link website" target="_blank">
-                <span>🌐</span>
-                Website
+            <a href="https://steamcommunity.com/id/DevGear" class="link custom1" target="_blank">
+                <span>💨</span>
+                Steam
             </a>
-            <a href="mailto:your@email.com" class="link email">
+            <a href="https://bsky.app/profile/dev-gear.bsky.social" class="link custom2" target="_blank">
+                <span>⚡</span>
+                Bluesky (Will replace soon).
+            </a>
+            <a href="mailto:nateexploring@gmail.com" class="link email">
                 <span>✉️</span>
-                Email
+                Buisness Email
             </a>
         </div>
     </div>
-
-    <!-- Edit Modal -->
-    <div id="editModal" class="modal">
-        <div class="modal-content">
-            <h2>Edit Your Profile</h2>
-            
-            <div class="form-group">
-                <label for="editName">Name:</label>
-                <input type="text" id="editName" placeholder="Your Name">
-            </div>
-            
-            <div class="form-group">
-                <label for="editBio">Bio:</label>
-                <input type="text" id="editBio" placeholder="Your bio goes here">
-            </div>
-            
-            <div class="form-group">
-                <label for="editInstagram">Instagram URL:</label>
-                <input type="url" id="editInstagram" placeholder="https://instagram.com/yourusername">
-            </div>
-            
-            <div class="form-group">
-                <label for="editTwitter">Twitter URL:</label>
-                <input type="url" id="editTwitter" placeholder="https://twitter.com/yourusername">
-            </div>
-            
-            <div class="form-group">
-                <label for="editLinkedIn">LinkedIn URL:</label>
-                <input type="url" id="editLinkedIn" placeholder="https://linkedin.com/in/yourusername">
-            </div>
-            
-            <div class="form-group">
-                <label for="editYouTube">YouTube URL:</label>
-                <input type="url" id="editYouTube" placeholder="https://youtube.com/@yourusername">
-            </div>
-            
-            <div class="form-group">
-                <label for="editTikTok">TikTok URL:</label>
-                <input type="url" id="editTikTok" placeholder="https://tiktok.com/@yourusername">
-            </div>
-            
-            <div class="form-group">
-                <label for="editGitHub">GitHub URL:</label>
-                <input type="url" id="editGitHub" placeholder="https://github.com/yourusername">
-            </div>
-            
-            <div class="form-group">
-                <label for="editWebsite">Website URL:</label>
-                <input type="url" id="editWebsite" placeholder="https://yourwebsite.com">
-            </div>
-            
-            <div class="form-group">
-                <label for="editEmail">Email:</label>
-                <input type="email" id="editEmail" placeholder="your@email.com">
-            </div>
-            
-            <div class="modal-buttons">
-                <button class="btn btn-cancel" onclick="closeEditModal()">Cancel</button>
-                <button class="btn btn-save" onclick="saveChanges()">Save Changes</button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // In-memory storage for user data
-        let userData = {
-            name: 'Your Name',
-            bio: 'Your bio goes here. Tell people about yourself!',
-            instagram: 'https://instagram.com/yourusername',
-            twitter: 'https://twitter.com/yourusername',
-            linkedin: 'https://linkedin.com/in/yourusername',
-            youtube: 'https://youtube.com/@yourusername',
-            tiktok: 'https://tiktok.com/@yourusername',
-            github: 'https://github.com/yourusername',
-            website: 'https://yourwebsite.com',
-            email: 'your@email.com'
-        };
-
-        function openEditModal() {
-            document.getElementById('editModal').style.display = 'block';
-            
-            // Populate form with current data
-            document.getElementById('editName').value = userData.name;
-            document.getElementById('editBio').value = userData.bio;
-            document.getElementById('editInstagram').value = userData.instagram;
-            document.getElementById('editTwitter').value = userData.twitter;
-            document.getElementById('editLinkedIn').value = userData.linkedin;
-            document.getElementById('editYouTube').value = userData.youtube;
-            document.getElementById('editTikTok').value = userData.tiktok;
-            document.getElementById('editGitHub').value = userData.github;
-            document.getElementById('editWebsite').value = userData.website;
-            document.getElementById('editEmail').value = userData.email;
-        }
-
-        function closeEditModal() {
-            document.getElementById('editModal').style.display = 'none';
-        }
-
-        function saveChanges() {
-            // Update userData
-            userData.name = document.getElementById('editName').value || userData.name;
-            userData.bio = document.getElementById('editBio').value || userData.bio;
-            userData.instagram = document.getElementById('editInstagram').value || userData.instagram;
-            userData.twitter = document.getElementById('editTwitter').value || userData.twitter;
-            userData.linkedin = document.getElementById('editLinkedIn').value || userData.linkedin;
-            userData.youtube = document.getElementById('editYouTube').value || userData.youtube;
-            userData.tiktok = document.getElementById('editTikTok').value || userData.tiktok;
-            userData.github = document.getElementById('editGitHub').value || userData.github;
-            userData.website = document.getElementById('editWebsite').value || userData.website;
-            userData.email = document.getElementById('editEmail').value || userData.email;
-
-            // Update display
-            updateDisplay();
-            closeEditModal();
-        }
-
-        function updateDisplay() {
-            // Update name and initials
-            document.getElementById('displayName').textContent = userData.name;
-            document.getElementById('displayBio').textContent = userData.bio;
-            
-            // Update profile pic initials
-            const initials = userData.name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
-            document.getElementById('profilePic').textContent = initials;
-
-            // Update links
-            const links = document.querySelectorAll('.link');
-            links[0].href = userData.instagram;
-            links[1].href = userData.twitter;
-            links[2].href = userData.linkedin;
-            links[3].href = userData.youtube;
-            links[4].href = userData.tiktok;
-            links[5].href = userData.github;
-            links[6].href = userData.website;
-            links[7].href = userData.email.startsWith('mailto:') ? userData.email : 'mailto:' + userData.email;
-        }
-
-        // Close modal when clicking outside
-        document.getElementById('editModal').onclick = function(event) {
-            if (event.target === this) {
-                closeEditModal();
-            }
-        }
-
-        // Initialize display on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            updateDisplay();
-        });
-    </script>
+</body>
 </body>
 </html>
